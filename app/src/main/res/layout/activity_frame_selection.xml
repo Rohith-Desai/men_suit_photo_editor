@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+   >
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/new_top_bar">
+
+            <LinearLayout
+                android:id="@+id/back_to_main_linear_from_selection"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/back_to_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/done_icon_update_final"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_semibold"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="Template"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/frames_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/white" />
+
+    <FrameLayout
+        android:id="@+id/selection_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp" />
+    <!--<FrameLayout
+        android:id="@+id/selection_banner_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />-->
+    <RelativeLayout
+        android:id="@+id/banner_ad"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <com.hangoverstudios.men.photo.suite.editor.app.ads.MyBannerView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</RelativeLayout>

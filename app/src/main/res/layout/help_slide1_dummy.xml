@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_margin="25dp"
+            android:padding="20dp"
+            android:background="@drawable/gradient_help_second_back"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="350dp"
+                android:padding="5dp"
+                android:background="@drawable/gradient_help_back_design"
+                android:src="@drawable/suit_sample"
+              />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Men Suit editor"
+            android:textColor="@color/others_btn_back"
+            android:textStyle="bold"
+            android:fontFamily="@font/noto_sans"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/noto_sans"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Add SUIT, BLAZER, UNIFORM and CASUALS to your images and make them beautiful"
+            android:textAlignment="center"
+            android:textColor="@color/others_btn_back"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</RelativeLayout>

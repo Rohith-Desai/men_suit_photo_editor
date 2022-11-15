@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.StickerEditActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center|center_horizontal"
+        android:background="@drawable/new_top_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3.5"
+            android:paddingBottom="2dp">
+
+            <LinearLayout
+                android:id="@+id/back_btn_linear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="-34dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/back_btn_img"
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/back_icon_update_final" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center_horizontal"
+                    android:text="Back"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/refresh_btn_linear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/refresh_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/acc_rotate_icon_33" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center_horizontal"
+                    android:text="Reset"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.75"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="STICKERS"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/rotate_btn_linear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".75"
+                android:visibility="gone"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/rotate_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/acc_rotate_icon_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_horizontal"
+                    android:text="Rotate"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/save_btn_linear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".75"
+                android:gravity="center"
+                android:layout_marginRight="-15dp"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/done_btn_img"
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/check_done_dummy" />
+                <!--          <ImageView
+                              android:id="@+id/rotate_btn"
+                              android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1.2"
+                              android:src="@drawable/rotate"
+                              android:tint="@color/white" />-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center_horizontal"
+                    android:text="Done"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/done_btn_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/save_btn_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--<ImageView
+                android:id="@+id/refresh_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/rotate_btn"
+                android:padding="10dp"
+                android:src="@drawable/refresh"
+                android:tint="@color/white" />-->
+            <!--<ImageView
+                android:id="@+id/save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:padding="10dp"
+                android:src="@drawable/save_2"
+                android:tint="@color/white" />-->
+            <!--<ImageView
+                android:id="@+id/mirror_btn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/save_btn"
+                android:layout_toLeftOf="@+id/save_btn"
+                android:src="@drawable/check_done"
+                android:padding="5dp"
+                android:tint="@color/white" />-->
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:layout_above="@id/stickers_preview_recycler"
+        android:layout_below="@id/top_layout"
+     >
+
+        <ImageView
+            android:id="@+id/selected_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cap_one" />
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/down_suits_preview_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/viewww"
+        android:background="@drawable/stickers_background_card_radius"
+        android:scrollbars="horizontal"
+        android:visibility="visible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stickers_preview_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/viewww"
+        android:background="@drawable/stickers_background_card_radius"
+        android:scrollbars="horizontal"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/viewww"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/linear_bottom_bar_container"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#1B1A1A">
+
+    </View>
+    <!--<LinearLayout
+        android:id="@+id/linear_prev_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_above="@id/linear_bottom_bar_container"
+        android:weightSum="2"
+        android:background="@color/grey"
+        android:visibility="gone"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:id="@+id/stickers_preview_recycler"
+            android:scrollbars="horizontal"
+            />
+        <TextView
+            android:id="@+id/more_stickers"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:text="MORE"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/blue_2"
+            />
+
+    </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/linear_bottom_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/banner_ad"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/men_style_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:visibility="visible"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:id="@+id/linear_hair_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/hair_style_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/hair" />
+
+                <TextView
+                    android:id="@+id/hair_style_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Hair"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+            <!--  <ImageView
+                  android:id="@+id/button_free"
+                  android:layout_width="0dp"
+                  android:gravity="center"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                 android:src="@drawable/free_tap"
+                  android:padding="10dp"
+                  android:tint="@color/blue_2"/>-->
+            <LinearLayout
+                android:id="@+id/linear_mustache"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/mustache_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="1dp"
+                    android:paddingRight="12dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/moustache" />
+
+                <TextView
+                    android:id="@+id/mustache_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Mustache"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+            <!--       <ImageView
+                       android:id="@+id/button_square"
+                       style="@style/AppTheme.Borderless"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:gravity="center"
+                       android:padding="10dp"
+                       android:tint="@color/blue_2"
+                       android:src="@drawable/square_selection"/>-->
+            <!--            <ImageView
+                            android:id="@+id/button_done"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="2dp"
+                            android:tint="@color/blue_2"
+                            android:src="@drawable/ic_check_black_24dp" />-->
+
+            <LinearLayout
+                android:id="@+id/linear_beard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/beard_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/beard" />
+
+                <TextView
+                    android:id="@+id/beard_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Beard"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <!--       <ImageView
+                       android:id="@+id/button_circle"
+                       android:layout_width="0dp"
+                       android:gravity="center"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:padding="10dp"
+                       android:src="@drawable/circle_crop"
+                       android:tint="@color/blue_2"
+                     />-->
+            <LinearLayout
+                android:id="@+id/linear_eyebrows"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/eyebrows_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="15dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/eye_brows" />
+
+                <TextView
+                    android:id="@+id/eyebrows_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Eyebrows"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <!--     <ImageView
+                     android:id="@+id/button_rotate_Right"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:gravity="center"
+                     android:layout_weight="1"
+                     android:src="@drawable/rotate_img"
+                     android:padding="10dp"
+                     android:tint="@color/blue_2"
+                     />-->
+            <LinearLayout
+                android:id="@+id/linear_eyeballs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/eyeballs_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="12dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/eyes" />
+
+                <TextView
+                    android:id="@+id/eyeballs_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Eyeballs"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <!--      <ImageView
+                      android:id="@+id/button_done"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:padding="5dp"
+                      android:tint="@color/blue_2"
+                      android:src="@drawable/ic_check_black_24dp" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/accessories_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@+id/sticker_edit_banner_ad"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:weightSum="6">
+
+            <LinearLayout
+                android:id="@+id/linear_sunglasses"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/sunglasses_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="12dp"
+                    android:src="@drawable/sunglasses" />
+
+                <TextView
+                    android:id="@+id/sunglasses_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Sunglasses"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_cap"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/cap_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="12dp"
+                    android:src="@drawable/caps" />
+
+                <TextView
+                    android:id="@+id/cap_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Caps"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_stoles"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/stoles_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="1dp"
+                    android:paddingBottom="1dp"
+                    android:src="@drawable/stoles" />
+
+                <TextView
+                    android:id="@+id/stoles_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Stoles"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_tie"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/tie_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="3dp"
+                    android:paddingBottom="1dp"
+                    android:src="@drawable/tie" />
+
+                <TextView
+                    android:id="@+id/tie_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Tie"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_chain"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/chain_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/chain" />
+
+                <TextView
+                    android:id="@+id/chain_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Chain"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_earring"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/earring_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:src="@drawable/earing" />
+
+                <TextView
+                    android:id="@+id/earring_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Earrings"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/makeover_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@+id/sticker_edit_banner_ad"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:id="@+id/linear_six_pack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/six_pack_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/body" />
+
+                <TextView
+                    android:id="@+id/six_pack_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Six Packs"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_eight_packs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/eight_packs_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/eight_pack" />
+
+                <TextView
+                    android:id="@+id/eight_packs_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Eight Packs"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_chest"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/chest_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/chest" />
+
+                <TextView
+                    android:id="@+id/chest_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Chest"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_tattoos"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/tattoos_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/tattoo" />
+
+                <TextView
+                    android:id="@+id/tattoos_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Tattoos"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/newsticker_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@+id/sticker_edit_banner_ad"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:id="@+id/loveStick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/loveStickImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/love_sticker" />
+
+                <TextView
+                    android:id="@+id/loveStickTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Love"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wishStick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/wishStickImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/wishes" />
+
+                <TextView
+                    android:id="@+id/wishStickTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Wishes"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/greetStick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/greetStickImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/greetings" />
+
+                <TextView
+                    android:id="@+id/greetStickTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Greetings"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/expStick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/expStickImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/expressions" />
+
+                <TextView
+                    android:id="@+id/expStickTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Expressions"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<FrameLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sticker_edit_banner_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />-->
+    <RelativeLayout
+        android:id="@+id/banner_ad"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <com.hangoverstudios.men.photo.suite.editor.app.ads.MyBannerView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

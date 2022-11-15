@@ -1,0 +1,4 @@
+rootProject.name='Men_Suit_Photo_Editor'
+include ':app'
+
+//, ':lib_interpreter', ':lib_task_api', ':lib_utils'

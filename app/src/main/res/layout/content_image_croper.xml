@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/RelLayAutoCutBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#00ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/RelRotateLay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ViewOverImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#00ffffff" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ViewShowImg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="#00ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/RelLayCutBg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/CutImageBg"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="#56434242"
+            android:scaleType="center"
+            android:src="@drawable/sample_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Hand Free Crop "
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Draw and cut selected part of image "
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

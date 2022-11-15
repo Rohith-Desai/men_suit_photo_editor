@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?><!-- START xml_defaults -->
+<defaultsMap>
+    <!--<entry>
+        <key>firebase_remote_config</key>
+        <value>{"server": "false",
+            "upgradeAppVersion": "1",
+            "showInterstitialOnLaunch": "true",
+            “showInterstitialOnExit”: “false”,
+            "showInterstitialOnLaunchFBAd": "false",
+            "showInterstitialAd": "true",
+            "interstitialOnlyGoogle": "true",
+            "interstitialOnlyFB": "false",
+            "adRotationPolicy": "false",
+            "adRotationPolicyNative": "false",
+            "showRewardVideoAd": "true",
+            "showNativeAd": "true",
+            "showNativeAdOnDialog": "true",
+            "showNativeAdOnMainScreen": "true",
+            "nativeOnlyGoogle": "true",
+            "nativeOnlyFB": "false",
+            "showOurAppInterstitials": "false",
+            "imageUrl":"",
+            "ourApps": "false"}
+        </value>
+    </entry>-->
+    <entry>
+        <key>server</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>upgradeAppVersion</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>showInterstitialOnLaunch</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>showInterstitialOnExit</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>showInterstitialOnLaunchFBAd</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>showInterstitialAd</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>interstitialOnlyGoogle</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>interstitialOnlyFB</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>adRotationPolicy</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>adRotationPolicyNative</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>showRewardVideoAd</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>showNativeAd</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>showNativeAdOnDialog</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>showNativeAdOnMainScreen</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>nativeOnlyGoogle</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>nativeOnlyFB</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>showOurAppInterstitials</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>imageUrl</key>
+        <value>""</value>
+    </entry>
+    <entry>
+        <key>ourApps</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>OurAppsOnMainScreen</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>EnableWatermark</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>enableIAPflag</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>removeAds</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>IAP_NOADS</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>openAppAdFrequency</key>
+        <value>0</value>
+    </entry>
+    <!--our apps-->
+    <!--    "ourApp1Link" : "https://play.google.com/store/apps/details?id=com.hangoverstudios.statusdp.whatsappstatussaver.saveit",
+            "ourApp1icon" : "https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/statussaver.png",
+            "ourApp2Link" : "https://play.google.com/store/apps/details?id=com.hangoverstudios.extreme.games.dangerousroaddriving.monster.truck4x4.offroad.stunt.jeep",
+            "ourApp2icon" : "https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/xoffroad.png",
+            "ourApp3Link" : "https://play.google.com/store/apps/details?id=com.hangoverstudios.finddifference.findimagedifferences.differencegame",
+            "ourApp3icon" : "https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/findimagedifferences.png",
+            "ourApp4Link" : "https://play.google.com/store/apps/details?id=com.manogna.helixjumpTwist.stack.breaker.twiststack.stackball3d",
+            "ourApp4icon" : "https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/stacktwist.png",
+            "ourApp5Link" : "https://play.google.com/store/apps/details?id=com.hangoverstudios.statusdp.whatsappstatussaver.saveit",
+            "ourApp5icon" : "https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/statussaver.png",
+            "ourApp6Link" : "https://play.google.com/store/apps/developer?id=Hangover+Studios",
+            "ourApp6icon" : "https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/funlearn.png",
+            "ourApp7Link" : "https://play.google.com/store/apps/developer?id=Deeku+Apps",
+            "ourApp7icon" : "https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/vehicleinfo.png",
+            "ourApp8Link" : "https://play.google.com/store/apps/details?id=com.hangoverstudios.statusdp.whatsappstatussaver.saveit",
+            "ourApp8icon" : "https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/statussaver.png",
+            "ourApp9Link" : "https://play.google.com/store/apps/details?id=com.manogna.helixjumpTwist.stack.breaker.twiststack.stackball3d",
+            "ourApp9icon" : "https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/stacktwist.png",-->
+   <!-- <entry>
+        <key>ourApp1Link</key>
+        <value>https://play.google.com/store/apps/details?id=com.hangoverstudios.statusdp.whatsappstatussaver.saveit</value>
+    </entry>
+    <entry>
+        <key>ourApp1icon</key>
+        <value>https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/statussaver.png</value>
+    </entry>
+
+    <entry>
+        <key>ourApp2Link</key>
+        <value>https://play.google.com/store/apps/details?id=com.hangoverstudios.extreme.games.dangerousroaddriving.monster.truck4x4.offroad.stunt.jeep</value>
+    </entry><entry>
+        <key>ourApp2icon</key>
+        <value>https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/xoffroad.png</value>
+    </entry>
+
+    <entry>
+        <key>ourApp3Link</key>
+        <value>https://play.google.com/store/apps/details?id=com.hangoverstudios.finddifference.findimagedifferences.differencegame</value>
+    </entry>
+    <entry>
+        <key>ourApp3icon</key>
+        <value>https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/findimagedifferences.png</value>
+    </entry>
+
+    <entry>
+        <key>ourApp4Link</key>
+        <value>https://play.google.com/store/apps/details?id=com.manogna.helixjumpTwist.stack.breaker.twiststack.stackball3d</value>
+    </entry>
+    <entry>
+        <key>ourApp4icon</key>
+        <value>https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/stacktwist.png</value>
+    </entry>
+
+    <entry>
+        <key>ourApp5Link</key>
+        <value>https://play.google.com/store/apps/details?id=com.hangoverstudios.statusdp.whatsappstatussaver.saveit</value>
+    </entry>
+    <entry>
+        <key>ourApp5icon</key>
+        <value>https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/statussaver.png</value>
+    </entry>
+
+    <entry>
+        <key>ourApp6Link</key>
+        <value>https://play.google.com/store/apps/developer?id=Hangover+Studios</value>
+    </entry>
+    <entry>
+        <key>ourApp6icon</key>
+        <value>https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/funlearn.png</value>
+    </entry>
+
+    <entry>
+        <key>ourApp7Link</key>
+        <value>https://play.google.com/store/apps/developer?id=Deeku+Apps</value>
+    </entry>
+    <entry>
+        <key>ourApp7icon</key>
+        <value>https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/vehicleinfo.png</value>
+    </entry>
+
+    <entry>
+        <key>ourApp8Link</key>
+        <value>https://play.google.com/store/apps/details?id=com.hangoverstudios.statusdp.whatsappstatussaver.saveit</value>
+    </entry>
+    <entry>
+        <key>ourApp8icon</key>
+        <value>https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/statussaver.png</value>
+    </entry>
+
+    <entry>
+        <key>ourApp9Link</key>
+        <value>https://play.google.com/store/apps/details?id=com.manogna.helixjumpTwist.stack.breaker.twiststack.stackball3d</value>
+    </entry>
+    <entry>
+        <key>ourApp9icon</key>
+        <value>https://raw.githubusercontent.com/Samarasa/appicons/master/images/suntuz/stacktwist.png</value>
+    </entry>-->
+
+    <entry>
+        <key>OurApps</key>
+        <value>{
+            "ourApp1Link": "https://play.google.com/store/apps/details?id=com.hangoverstudios.romantic.photo.frames.love.photo.editor",
+            "ourApp1icon": "https://raw.githubusercontent.com/Samarasa/appicons/master/images/gadi/newicons/romantic.png",
+            "ourApp2Link": "https://play.google.com/store/apps/details?id=com.hangoverstudios.photo.suit.editor",
+            "ourApp2icon": "https://raw.githubusercontent.com/Samarasa/appicons/master/images/gadi/newicons/photosuit.png",
+            "ourApp3Link": "https://play.google.com/store/apps/details?id=com.hangoverstudios.books.photo.frame.collage",
+            "ourApp3icon": "https://raw.githubusercontent.com/Samarasa/appicons/master/images/gadi/newicons/photobook.png",
+            "ourApp4Link": "https://play.google.com/store/apps/details?id=com.hangoverstudios.men.photo.suite.editor.app",
+            "ourApp4icon": "https://raw.githubusercontent.com/Samarasa/appicons/master/images/gadi/newicons/mensuit.png",
+            "ourApp5Link": "https://play.google.com/store/apps/details?id=com.hangoverstudios.photo.photocollage.photoeditor.collagemaker",
+            "ourApp5icon": "https://raw.githubusercontent.com/Samarasa/appicons/master/images/gadi/newicons/college.png",
+            "ourApp6Link": "https://play.google.com/store/apps/details?id=com.hangoverstudios.photoeditor.neonphotoeditor",
+            "ourApp6icon": "https://raw.githubusercontent.com/Samarasa/appicons/master/images/gadi/newicons/neon.png",
+            "ourApp7Link": "https://play.google.com/store/apps/details?id=com.hangoverstudios.reverse.video.effect",
+            "ourApp7icon": "https://raw.githubusercontent.com/Samarasa/appicons/master/images/gadi/newicons/reverse.png",
+            "ourApp8Link": "https://play.google.com/store/apps/details?id=com.hangoverstudios.statusdp.whatsappstatussaver.saveit",
+            "ourApp8icon": "https://raw.githubusercontent.com/Samarasa/appicons/master/images/gadi/newicons/saver.png",
+            "ourApp9Link": "https://play.google.com/store/apps/details?id=com.hangoverstudios.daily.expensemanager",
+            "ourApp9icon": "https://raw.githubusercontent.com/Samarasa/appicons/master/images/gadi/newicons/expense.png"
+            }</value>
+    </entry>
+    <entry>
+        <key>updateFromPlaystore</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>ShowRatingLayout</key>
+        <value>false</value>
+    </entry>
+
+
+
+</defaultsMap>
+<!--showNativeAdOnDialog
+            showRewardVideoAd
+            imageUrl-->

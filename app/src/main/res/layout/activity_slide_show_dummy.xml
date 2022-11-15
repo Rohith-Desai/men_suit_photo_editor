@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="12"
+        >
+        <FrameLayout
+            android:id="@+id/capture_linear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".75"
+            android:background="@drawable/new_top_bar"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/select_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/back_to_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/back_icon_update_final" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center_horizontal"
+                    android:text="Back"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/img_name"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="img name"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10.5"
+            android:layout_gravity="center"
+            android:background="@color/black">
+            <ViewFlipper
+                android:id="@+id/myflipper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+            </ViewFlipper>
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/select_options"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".75"
+            android:visibility="visible"
+            android:background="@color/white"
+            android:layout_alignParentTop="true">
+            <!--        <TextView
+                        android:id="@+id/select_count"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:text="selected : "
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />-->
+            <!--     <ImageView
+                     android:id="@+id/select_selectall"
+                     android:tint="@color/black"
+                     android:layout_width="60dp"
+                     android:layout_height="50dp"
+                     android:padding="10dp"
+                     android:src="@drawable/ic_select_all_black_24dp"/>-->
+            <ImageView
+                android:id="@+id/select_share"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/share_update" />
+            <!--        <ImageView
+                        android:id="@+id/select_download"
+                        android:tint="@color/black"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+
+                       android:src="@drawable/ic_save_black_24dp"/>-->
+            <ImageView
+                android:id="@+id/delete_image"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="7dp"
+                android:src="@drawable/delete_update" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_rounded_background">
+<LinearLayout
+    android:layout_width="350dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_height="200dp"
+    android:background="@drawable/dialog_rounded_background"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dialog_msg"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="msg"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:fontFamily="@font/poppins_medium"
+                android:id="@+id/dialog_msg_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="msgSub"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="50dp"
+                android:paddingTop="10dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:fontFamily="@font/poppins_medium"
+                    android:visibility="invisible"
+                    android:id="@+id/dialog_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/red_bg"
+                    android:gravity="center"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="7dp"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:fontFamily="@font/poppins_medium"
+                    android:id="@+id/dialog_ok"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue_bg"
+                    android:gravity="center"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="7dp"
+                    android:text="Ok"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

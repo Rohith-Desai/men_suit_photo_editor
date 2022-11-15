@@ -1,0 +1,245 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/save_share_banner_ad"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <com.hangoverstudios.men.photo.suite.editor.app.ads.MyBannerView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <!--<FrameLayout
+        android:id="@+id/save_share_banner_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />-->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/save_share_banner_ad"
+        android:background="@drawable/new_top_bar">
+        <ImageView
+            android:id="@+id/share_back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_back"
+            app:tint="@color/white"
+            android:visibility="visible"
+            />
+       <!-- <LinearLayout
+            android:id="@+id/back_to_home_linear"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/back_to_img"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:tint="@color/black"
+                android:src="@drawable/ic_left_arrow" />
+
+            <TextView
+                android:fontFamily="@font/noto_sans"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Back"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+        </LinearLayout>-->
+
+
+         <ImageView
+             android:id="@+id/go_to_home"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:padding="15dp"
+             android:layout_height="match_parent"
+             android:src="@drawable/save_share_home_icon_2"
+             android:visibility="visible"
+             app:tint="@color/white" />
+
+        <TextView
+                android:fontFamily="@font/poppins_medium"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="Share"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/rate_app"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/rate_icon_2"
+            android:gravity="center"
+            android:visibility="visible"
+            app:tint="@color/white" />
+        <ImageView
+            android:id="@+id/share_app"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/save_share_share_icon_2"
+            android:gravity="center"
+            android:padding="17dp"
+            android:visibility="visible"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonShareFooter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/top_bar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6">
+
+            <ImageView
+                android:id="@+id/share_imageView"
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_bar"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+      >
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/instagramShare"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:onClick="myClickHandler"
+                android:padding="10dp"
+                android:src="@drawable/instagram_logo_update" />
+
+            <TextView
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Instagram"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/whatsup_share"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:padding="10dp"
+                android:onClick="myClickHandler"
+                android:src="@drawable/whatsapp_logo_update" />
+
+            <TextView
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Whatsapp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/facebook_share"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:onClick="myClickHandler"
+                android:padding="10dp"
+                android:src="@drawable/facebook_logo_update" />
+
+            <TextView
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Facebook"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_more"
+                android:onClick="myClickHandler"
+                android:padding="10dp"
+                android:src="@drawable/ic_more" />
+
+            <TextView
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="More"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

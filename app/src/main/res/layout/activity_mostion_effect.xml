@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.MostionEffectActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/toolbar_motion"
+        android:layout_gravity="center"
+        android:background="@drawable/new_top_bar">
+
+        <LinearLayout
+            android:id="@+id/back_to_home_activity"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/back_to_img"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/back_icon_update_final" />`
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_motion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Motion Effect"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/applyMotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/ic_gradient_apply_back"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="2dp"
+
+
+            android:paddingRight="20dp"
+            android:paddingBottom="2dp"
+            android:text="Apply"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/motion_effect"
+        android:layout_below="@+id/toolbar_motion"
+        android:layout_marginBottom="150.0dip"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlMain"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/img_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="invisible"
+                android:id="@+id/full_foreground">
+            </ImageView>
+            <com.hangoverstudios.men.photo.suite.editor.app.views.BitmapView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/motionBitmap">
+            </com.hangoverstudios.men.photo.suite.editor.app.views.BitmapView>
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+   <!-- <RelativeLayout
+        android:id="@+id/rlMain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar_motion"
+        android:layout_margin="10dp"
+        android:layout_above="@+id/seekbarlinear"
+       >
+
+        <ImageView
+            android:id="@+id/img_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+
+        <FrameLayout
+            android:id="@+id/rlMotion"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/seekbarlinear"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Density">
+            </TextView>
+            <SeekBar
+                android:id="@+id/densityseekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/bg"
+                android:progressTint="@color/bg"
+                android:progressBackgroundTint="@color/divider"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Opacity">
+            </TextView>
+            <SeekBar
+                android:id="@+id/opacityseekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/bg"
+                android:progressTint="@color/bg"
+                android:progressBackgroundTint="@color/divider"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

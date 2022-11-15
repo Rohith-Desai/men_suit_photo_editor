@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/calligraffitti</item>
+        <item>@font/cambo</item>
+        <item>@font/dynalight</item>
+        <item>@font/faster_one</item>
+        <item>@font/metrophobic</item>
+        <item>@font/montserrat_alternates_bold</item>
+        <item>@font/montserrat_bold</item>
+        <item>@font/montserrat_subrayada</item>
+        <item>@font/pinyon_script</item>
+        <item>@font/poppins_medium</item>
+        <item>@font/poppins_semibold</item>
+    </array>
+</resources>

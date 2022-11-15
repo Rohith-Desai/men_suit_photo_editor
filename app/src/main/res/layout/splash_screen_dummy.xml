@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_shade">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:src="@drawable/shape_bg">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/char_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/character_01" />
+
+    <LinearLayout
+        android:id="@+id/men_suit_text_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/char_img"
+        android:layout_marginTop="-160dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Men Photo Suit Editor"
+            android:textAllCaps="false"
+            android:textColor="#198bff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/load_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/progress_bar"
+            android:gravity="center"
+            android:text="L O A D I N G . . . "
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:textStyle="bold">
+
+        </TextView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="36.0dip"
+        android:layout_above="@id/start_but"
+        android:layout_below="@+id/men_suit_text_lay"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:progress="0"
+        android:progressDrawable="@drawable/loading_bg" />
+
+    <TextView
+        android:id="@+id/start_but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-145dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/splash_button_bg"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="Let's Start"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

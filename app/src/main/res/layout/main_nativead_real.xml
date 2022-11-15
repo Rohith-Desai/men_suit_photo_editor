@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/native_rl_ad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="290dp">
+
+        <com.hangoverstudios.men.photo.suite.editor.app.ads.MyNativeView
+            android:id="@+id/native_ad_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

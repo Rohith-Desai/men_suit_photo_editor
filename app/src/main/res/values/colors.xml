@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3e6986</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="grey">#E5E7E9</color>
+    <color name="frame_grey">#494949</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="transparent_black">#4D000000</color>
+    <color name="transparent_blue">#400000FF</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue_2">#267CE4</color>
+    <color name="dark_grey">#515A5A </color>
+    <color name="yellow_2">#FFDB21</color>
+    <color name="water_mak_color_black">#80000000</color>
+    <color name="water_mak_color_white">#80FFFFFF</color>
+    <color name="dark_grey_2">#303030</color>
+    <color name="black_transparent">#64000000</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#FF2143</color>
+    <color name="dot_dark_screen2">#FF2143</color>
+    <color name="dot_dark_screen3">#FF2143</color>
+    <color name="dot_dark_screen4">#FF2143</color>
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#9F9F9F</color>
+    <color name="dot_light_screen2">#9F9F9F</color>
+    <color name="dot_light_screen3">#9F9F9F</color>
+    <color name="dot_light_screen4">#9F9F9F</color>
+    <color name="light_grey">#F5F5F5</color>
+    <color name="colorAccents">#A46AFA</color>
+    <color name="ratus">#0072DC</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactives">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+    </array>
+
+
+
+    <color name="primary">#3A3A3A</color>
+    <color name="primary_dark">#1e857b</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="accent">#FF4081</color>
+    <color name="bg">#58554e</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="primary_400">#5C6BC0</color>
+    <color name="screen_bg">#f2f2f2</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_white_grey">#FAFAFA</color>
+    <color name="cashback_textcolor">#FF9800</color>
+    <color name="horizontal_line_color">#dedede</color>
+    <color name="bll">#1B8D78</color>
+    <color name="button_text_color">#ff919191</color>
+
+    <color name="emerald_flat">#1c9efe</color>
+    <color name="purple_flat">#10ca77</color>
+    <color name="orange_flat">#ff5a72</color>
+    <color name="yellow_flat">#9257ef</color>
+    <color name="greenland_flat">#22a6b3</color>
+    <color name="pomegranate_flat">#fe795a</color>
+    <color name="silver_flat">#ffb400</color>
+
+    <!--categories color -->
+    <color name="category_color_one">#48b5b3</color>
+    <color name="category_color_two">#f79225</color>
+    <color name="category_color_three">#1ea0d7</color>
+    <color name="category_color_four">#6a8214</color>
+    <color name="category_color_five">#c0b34a</color>
+    <color name="category_color_six">#8f2f0d</color>
+    <color name="category_color_seven">#ba5fc8</color>
+    <color name="category_color_eight">#c54f99</color>
+    <color name="category_color_nine">#74b3b4</color>
+    <color name="category_color_ten">#444441</color>
+    <color name="default_card_bg">#FFFFFF</color>
+    <color name="divider_light">#dddddd</color>
+
+
+    <!--crop imageview color-->
+    <color name="base">#FFFFFB</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="text">#1C1C1C</color>
+    <color name="handle">#86C166</color>
+    <color name="frame">#86C166</color>
+    <color name="guide">#AA86C166</color>
+    <color name="menu_bg">#FFFFFB</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="gallery_header_color">#ffec4f4f</color>
+    <color name="view_flipper_bg_color">#ff535353</color>
+    <color name="footer_back_color">#FC8033</color>
+    <color name="lib_header_bg">#ff283240</color>
+    <color name="lib_blue_2">#ffdf5759</color>
+    <color name="gallery_count_color">#ff13cd61</color>
+    <color name="collage_tool_background_color">#ff535353</color>
+
+    <color name="gallery_ok_button_normal">#077b8a</color>
+    <color name="gallery_ok_button_pressed">#ff6a8214</color>
+
+    <color name="collage_pink">#ff6f84</color>
+    <color name="collage_pink_pressed">#d24666</color>
+
+    <color name="collage_orange">#e15f36</color>
+    <color name="collage_orange_pressed">#F3501D</color>
+
+    <color name="collage_green">#52be57</color>
+    <color name="collage_green_pressed">#429F46</color>
+
+    <color name="collage_yellow">#ee9f3b</color>
+    <color name="collage_yellow_pressed">#FF9F24</color>
+
+    <color name="collage_violate">#be3ad6</color>
+    <color name="collage_violate_pressed">#9B27B0</color>
+
+    <color name="collage_cyan">#4497e0</color>
+    <color name="collage_cyan_pressed">#1D87E4</color>
+    <color name="ripple_light">#1f000000</color>
+
+    <color name="navy_blue">#121d32</color>
+    <color name="transparent_lime">#59502812</color>
+    <color name="grey_2">#A6ACAF</color>
+
+    <color name="c1">#6542BE</color>
+    <color name="ratingbg">#6542BE</color>
+
+    <color name="black1">#3A3A3A</color>
+    <color name="colorMainBlackLight">#E5070707</color>
+
+    <color name="save_btn_back">#62d791</color>
+    <color name="fb_btn_back">#3b5796</color>
+    <color name="telegram_btn_back">#029be7</color>
+    <color name="others_btn_back">#383838</color>
+    <color name="light_black">#E4000000</color>
+    <color name="whatsapp_back">#0aa05b</color>
+    <color name="original_main_back">#9ee8f3</color>
+    <color name="royal_blue">#4169E1</color>
+
+
+
+</resources>

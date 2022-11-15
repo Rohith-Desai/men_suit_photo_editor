@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_reset"
+        android:title="FREE" />
+
+    <item
+        android:id="@+id/navigation_square"
+        android:title="SQUARE" />
+
+    <item
+        android:id="@+id/navigation_rotate"
+        android:title="ROTATE" />
+
+    <item
+        android:id="@+id/navigation_check"
+        android:icon="@drawable/ic_check_black_24dp"
+        android:title="OK" />
+
+</menu>

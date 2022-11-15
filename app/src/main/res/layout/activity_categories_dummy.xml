@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/catRel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/new_top_bar"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/linear_cat_back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/img_back_to_crop"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1.5"
+                android:src="@drawable/back_icon_update_final" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center_horizontal"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/catText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="CATEGORIES"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/linear_cat_done"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1.5"
+                android:src="@drawable/done_icon_update_final" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center_horizontal"
+                android:text="Done"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp">
+
+        <ImageView
+            android:id="@+id/afterCrop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/grey"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bgph_1" />
+
+        <TextView
+            android:id="@+id/water_mark_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="@string/hangover_studios"
+            android:textColor="@color/water_mak_color_white"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_above="@+id/banner_ad"-->
+    <!--        android:layout_below="@+id/catRel"-->
+    <!--        android:background="@color/white"-->
+    <!--        android:gravity="center">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/banner_ad"
+        android:layout_below="@+id/catRel"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/suites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/dup_afterCrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@color/grey"
+                android:scaleType="fitCenter"
+                android:src="@drawable/suit_one" />
+
+            <TextView
+                android:id="@+id/dup_water_mark_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="@string/hangover_studios"
+                android:textColor="@color/water_mak_color_white"
+                android:textSize="14sp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/linear_man_styles"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/men_style"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:adjustViewBounds="true"
+                                        android:padding="10dp"
+                                        android:src="@drawable/bussiness_man" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_semibold"
+                                        android:gravity="center"
+                                        android:text="Man Styles"
+                                        android:textColor="@color/black"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_dresses"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/dresses"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:adjustViewBounds="true"
+                                        android:padding="10dp"
+                                        android:src="@drawable/clothes_new" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_semibold"
+                                        android:gravity="center"
+                                        android:text="Dresses"
+                                        android:textColor="@color/black"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_blur"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/cat_uniform"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:adjustViewBounds="true"
+                                        android:padding="10dp"
+                                        android:src="@drawable/police_uniform_new" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_semibold"
+                                        android:gravity="center"
+                                        android:text="Uniform"
+                                        android:textColor="@color/black"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_effects"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/image_effects"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:adjustViewBounds="true"
+                                        android:padding="10dp"
+                                        android:src="@drawable/effects_new" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_semibold"
+                                        android:gravity="center"
+                                        android:text="Effects"
+                                        android:textColor="@color/black"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_background"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/background"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:adjustViewBounds="true"
+                                        android:padding="10dp"
+                                        android:src="@drawable/background_new" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_semibold"
+                                        android:gravity="center"
+                                        android:text="Background"
+                                        android:textColor="@color/black"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_accessories"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/accessories"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:adjustViewBounds="true"
+                                        android:padding="10dp"
+                                        android:src="@drawable/accessories_new" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_semibold"
+                                        android:gravity="center"
+                                        android:text="Accessories"
+                                        android:textColor="@color/black"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_bg_eraser"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/bg_eraser"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:adjustViewBounds="true"
+                                        android:padding="10dp"
+                                        android:src="@drawable/eraser__2_new" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_semibold"
+                                        android:gravity="center"
+                                        android:text="BG Eraser"
+                                        android:textColor="@color/black"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:id="@+id/linear_make_over"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/make_over"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:layout_gravity="center"
+                                        android:adjustViewBounds="true"
+                                        android:padding="10dp"
+                                        android:src="@drawable/makeover_new" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_semibold"
+                                        android:gravity="center"
+                                        android:text="Make Over"
+                                        android:textColor="@color/black"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_frames"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/frames"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:adjustViewBounds="true"
+                                        android:padding="10dp"
+                                        android:src="@drawable/frame__1_new" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_semibold"
+                                        android:gravity="center"
+                                        android:singleLine="true"
+                                        android:text="Frames"
+                                        android:textColor="@color/black"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_stickers"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/stickers"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:adjustViewBounds="true"
+                                        android:padding="10dp"
+                                        android:src="@drawable/sticker_new" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_semibold"
+                                        android:gravity="center"
+                                        android:singleLine="true"
+                                        android:text="Stickers"
+                                        android:textColor="@color/black"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <!--            </ScrollView>-->
+    <!--        </RelativeLayout>-->
+    <!--    </ScrollView>-->
+
+    <RelativeLayout
+        android:id="@+id/banner_ad"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <com.hangoverstudios.men.photo.suite.editor.app.ads.MyBannerView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <!--<FrameLayout
+        android:id="@+id/cat_banner_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />-->
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/dialog_rounded_background">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Select Image"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:id="@+id/linear_gallery"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/btn_gallery"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/gallery_updated_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Gallery"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_camera"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/btn_camera"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/camera_updated_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Camera"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_crop_saved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

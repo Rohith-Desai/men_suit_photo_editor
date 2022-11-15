@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/font_fragment_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/banner_ad"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        >
+
+        <com.hangoverstudios.men.photo.suite.editor.app.ads.MyBannerView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <!--<FrameLayout
+        android:id="@+id/text_banner_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+         />-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_2"
+        android:orientation="horizontal">
+
+        <Button
+                    android:fontFamily="@font/noto_sans"
+            android:id="@+id/button_text_color"
+            style="@style/canvas_text_toolbar_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/canvas_text_color"
+            android:textColor="@color/gallery_ok_button_normal" />
+
+        <Button
+                    android:fontFamily="@font/noto_sans"
+            android:id="@+id/button_font_ok"
+            style="@style/canvas_text_toolbar_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@android:string/ok"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+                android:fontFamily="@font/noto_sans"
+        android:id="@+id/textview_font"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/preview_text_view_height"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="center"
+        android:lines="1"
+        android:padding="5dp"
+        android:text="@string/preview_text"
+        android:textColor="@color/dark_grey"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edittext_font"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="1"
+        android:gravity="center"
+        android:background="@color/white"
+        android:hint="enter text here.."
+        android:imeOptions="actionDone"
+        android:inputType="textNoSuggestions"
+        android:padding="@dimen/edittext_padding"
+        android:singleLine="true"
+        android:textColor="@color/grey_2" />
+
+    <GridView
+        android:id="@+id/gridview_font"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:cacheColorHint="@color/black"
+        android:background="@color/guide"
+        android:numColumns="4" />
+</LinearLayout>

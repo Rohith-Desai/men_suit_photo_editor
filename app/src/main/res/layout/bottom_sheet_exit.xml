@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_dialog_box">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Are you sure want to exit"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:weightSum="3">
+
+
+            <TextView
+                android:id="@+id/exit_no"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="NO"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/exit_yes"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/blue_bg"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="YES"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.hangoverstudios.men.photo.suite.editor.app.ads.MyNativeView
+        android:layout_width="fill_parent"
+        android:minHeight="290dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".mask.MaskEffect">
+
+    <RelativeLayout
+        android:id="@+id/bar_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_top_bar"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/back_to_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:src="@drawable/back_icon_update_final" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Mask Effect"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/applyEff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:background="@drawable/ic_gradient_apply_back"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="20dp"
+            android:paddingTop="2dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="2dp"
+            android:text="Apply"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/bar_app"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/cacheFrame"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/baCK"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/imageview_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/native_rl_ad"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="120dp"
+                android:minHeight="355dp">
+
+                <com.hangoverstudios.men.photo.suite.editor.app.ads.MyNativeView
+                    android:id="@+id/native_ad_main"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/banner_ad"
+        android:background="#EEF0F1"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_above="@+id/maskImages"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/brightness"/>
+
+                <SeekBar
+                    android:id="@+id/brightseekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:thumbTint="@color/bg"
+                    android:progressTint="@color/bg"
+                    android:progressBackgroundTint="@color/divider"
+                    android:max="310"
+                    android:progress="155" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:padding="5dp"
+                    android:src="@drawable/contrast"/>
+
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:thumbTint="@color/bg"
+                    android:progressTint="@color/bg"
+                    android:progressBackgroundTint="@color/divider"
+                    android:max="10"
+                    android:progress="1" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/maskImages"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/banner_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <com.hangoverstudios.men.photo.suite.editor.app.ads.MyBannerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

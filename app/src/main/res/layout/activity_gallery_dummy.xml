@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey">
+
+    <LinearLayout
+        android:id="@+id/select_options"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue_2"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:id="@+id/select_back_linear"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/select_back_img"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/back_icon_2_dummy" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:text="Back"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/select_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+
+            android:text="selected : "
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/select_selectall"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_select_all_black_24dp"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/select_share"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_share_black_24dp"
+            app:tint="@color/white" />
+        <!--        <ImageView
+                    android:id="@+id/select_download"
+                    android:tint="@color/black"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_save_black_24dp"/>-->
+        <ImageView
+            android:id="@+id/select_delete"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_delete_black_24dp"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tool_options"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue_2"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/new_top_bar">
+
+            <LinearLayout
+                android:id="@+id/back_to_home_linear"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/back_to_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/back_icon_update_final" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:visibility="gone"
+                    android:gravity="center_horizontal"
+                    android:text="Back"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="GALLERY"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/redoButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/redo_icon"
+                android:gravity="center"
+                android:visibility="gone"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/undoButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/redoButton"
+                android:background="@drawable/undo_icon"
+                android:gravity="center"
+                android:visibility="gone"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/banner_ad"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/no_images_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="No photos to show."
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/image_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/banner_ad"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <com.hangoverstudios.men.photo.suite.editor.app.ads.MyBannerView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <!--<FrameLayout
+        android:id="@+id/gallery_banner_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>-->
+</RelativeLayout>

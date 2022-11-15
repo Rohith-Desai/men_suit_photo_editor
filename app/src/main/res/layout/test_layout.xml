@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/remove_ads_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="visible"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:drawableTint="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/ic_block"
+            android:drawableRight="@drawable/ic_block"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:text="Remove ADs"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+</RelativeLayout>

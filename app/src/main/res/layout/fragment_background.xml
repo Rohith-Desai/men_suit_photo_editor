@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <!--below is the image view where we will
+        be displaying images in our stories-->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:contentDescription="@null"
+        tools:src="@drawable/splash_img_2" />
+
+    <!--on below line we are creating
+        linear layout for our views-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!--view to handle move to previous image-->
+        <View
+            android:id="@+id/reverse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!--view to move to the next image-->
+        <View
+            android:id="@+id/skip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <!--below widget is use to create indicator for our stories at top-->
+    <jp.shts.android.storiesprogressview.StoriesProgressView
+        android:id="@+id/stories"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stories"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_caegories_white_back"
+            android:padding="3dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="50dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/sbackground_icon">
+                    </ImageView>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Background"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp">
+        </TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/trynowbutton"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/upload_status"
+            android:tint="@color/white"
+            android:layout_gravity="center">
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_gradient_trynow_back"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:padding="15dp"
+            android:text="Try Now"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:gravity="center">
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

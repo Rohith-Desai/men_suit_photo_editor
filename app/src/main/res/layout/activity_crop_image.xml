@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CropImageNew">
+
+    <com.isseiaoki.simplecropview.CropImageView
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:padding="5dp"
+        app:scv_background_color="@color/grey"
+        app:scv_crop_mode="square"
+        app:scv_frame_color="@color/black"
+        app:scv_frame_stroke_weight="2dp"
+        app:scv_guide_color="@color/red"
+        app:scv_guide_show_mode="show_always"
+        app:scv_guide_stroke_weight="1dp"
+        app:scv_handle_color="@color/colorAccent"
+        app:scv_handle_show_mode="show_always"
+        app:scv_handle_size="14dp"
+        app:scv_min_frame_size="25dp"
+        app:scv_overlay_color="@color/transparent_blue"
+        app:scv_touch_padding="8dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cropImageView"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:id="@+id/button_square"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/square_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:padding="5dp"
+                    android:src="@drawable/square_selection" />
+
+                <TextView
+                android:fontFamily="@font/poppins_medium"
+                    android:id="@+id/square_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="Square Crop"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/button_rotate_Right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/rotate_button_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:padding="5dp"
+                    android:src="@drawable/rotate_img" />
+
+                <TextView
+                android:fontFamily="@font/poppins_medium"
+                    android:id="@+id/rotate_btn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="Rotate"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/doneCrop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    app:tint="@color/black"
+                    android:src="@drawable/crop_accept" />
+
+                <TextView
+                android:fontFamily="@font/poppins_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="Done"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
